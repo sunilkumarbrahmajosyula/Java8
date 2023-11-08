@@ -20,6 +20,7 @@ public class FunctionalInterface {
 
 
         //filter Predicate
+        Predicate<String> stringPredicate = x-> x.startsWith("S");
         Predicate<Integer> evenPredicate = x->x%2==0;
         integerList.stream().filter(evenPredicate).collect(Collectors.toList());
 
@@ -31,5 +32,7 @@ public class FunctionalInterface {
 
         Consumer<Integer> print = System.out::println;
         integerList.stream().forEach(print);
+
+
     }
 }

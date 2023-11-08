@@ -18,6 +18,7 @@ public class ReduceOperation {
 
     private static int sumOfAllNumbers(List<Integer> integerList) {
         return integerList.stream().reduce(0,Integer::sum);
+        //return integerList.stream().reduce(0,(x,y)->x+y);
     }
 
 
